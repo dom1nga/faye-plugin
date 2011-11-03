@@ -13,15 +13,15 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "faye-plugin"
   gem.homepage = "http://github.com/dom1nga/faye-plugin"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Provides helper methods for automatically updating model fields on views"
+  gem.description = "Provides helper methods for automatically updating model fields on views"
   gem.email = "beloved.dom1nga@gmail.com"
   gem.authors = ["dom1nga"]
-  # dependencies defined in Gemfile
+
+  gem.add_dependency 'faye', '~> 0.6.7'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
