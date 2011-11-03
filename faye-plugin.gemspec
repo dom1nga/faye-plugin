@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "faye-plugin-0.1.1.gem",
     "faye-plugin.gemspec",
     "lib/faye-plugin.rb",
     "lib/faye-plugin/observers/faye_plugin_observer.rb",
