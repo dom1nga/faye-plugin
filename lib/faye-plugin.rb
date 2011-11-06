@@ -28,12 +28,9 @@ module FayePlugin
 
       private
 
-      def find_faye_client
-          @faye_client = env['faye.client']
-      end
-
-      def set_faye_client_for_observer
-        ActionObserver.faye_client = env['faye.client']
+      def set_faye_client
+        @faye_client = env['faye.client']
+        ActionObserver.faye_client = @faye_client
       end
     end
   end
