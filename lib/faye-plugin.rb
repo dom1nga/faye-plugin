@@ -39,3 +39,4 @@ end
 
 ActionView::Base.send(:include, FayePlugin::HelperAdditions) if defined?(ActionView::Base)
 ActionController::Base.class_eval { include FayePlugin::ControllerAdditions } if defined? ActionController
+ActionController::Base.send(:before_filter, :set_faye_client) if defined? ActionController
